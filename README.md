@@ -5,9 +5,8 @@
 1. 编译后的exe 在根目录 main.exe
 
 1. 修改虚拟网卡名称
-D:\11\1gotun\tun2socks\core\device\tun\tun_wireguard_windows.go 第13行 name = "FxProxy"
 D:\11\1gotun\tun2socks\internal\version\version.go 第9行 const Name = "FxProxy"
-
+main.go 修改 device 默认值为 "FxProxy"
 
 
 

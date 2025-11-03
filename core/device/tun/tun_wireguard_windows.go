@@ -10,6 +10,5 @@ const (
 )
 
 func createTUN(name string, mtu int) (tun.Device, error) {
-	name = "FxProxy"
 	return tun.CreateTUN(name, mtu)
 }
