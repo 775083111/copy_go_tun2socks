@@ -27,7 +27,7 @@ func init() {
 	flag.IntVar(&key.MTU, "mtu", 0, "Set device maximum transmission unit (MTU)")
 	flag.DurationVar(&key.UDPTimeout, "udp-timeout", 0, "Set timeout for each UDP session")
 	flag.StringVar(&configFile, "config", "", "YAML format configuration file")
-	flag.StringVar(&key.Device, "device", "", "Use this device [driver://]name")
+	flag.StringVar(&key.Device, "device", "FxProxy", "Use this device [driver://]name")
 	flag.StringVar(&key.Interface, "interface", "", "Use network INTERFACE (Linux/MacOS only)")
 	flag.StringVar(&key.LogLevel, "loglevel", "info", "Log level [debug|info|warn|error|silent]")
 	flag.StringVar(&key.Proxy, "proxy", "", "Use this proxy [protocol://]host[:port]")
